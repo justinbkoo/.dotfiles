@@ -40,6 +40,7 @@ alias activate='source .venv/bin/activate'
 alias vi='nvim'
 alias vim='nvim'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias gs='git status'
 
 if [ "$TERM" != "linux" ]; then
     install_powerline_precmd
