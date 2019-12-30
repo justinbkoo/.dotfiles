@@ -1,4 +1,10 @@
 set timeoutlen=1000 ttimeoutlen=0
+set path=**
+set wildignore+=**/node_modules/**
+set wildignore+=**/.venv/**
+set nocompatible
+syntax enable
+filetype plugin on
 
 " Window resize via Alt + Shift + arrows
 map <S-h> 5<C-W><
@@ -6,6 +12,7 @@ map <S-l> 5<C-W>>
 map <S-k> 5<C-W>-
 map <S-j> 5<C-W>+
 
+inoremap {<CR> {<CR>}<Esc>O
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
@@ -34,6 +41,6 @@ let g:netrw_winsize = 15 "15% window width for tree
 
 " Horizontal and vertical vim split bar styling
 set fillchars=""
-highlight VertSplit ctermbg=0 ctermfg=6
-highlight StatusLine ctermbg=0 ctermfg=4
-highlight StatusLineNC ctermbg=0 ctermfg=6
+highlight VertSplit ctermbg=White ctermfg=DarkGray
+highlight StatusLine ctermbg=Black ctermfg=DarkMagenta
+highlight StatusLineNC ctermbg=White ctermfg=DarkGray

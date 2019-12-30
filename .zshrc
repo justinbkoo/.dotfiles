@@ -41,6 +41,7 @@ alias vi='nvim'
 alias vim='nvim'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias gs='git status'
+alias gco='git checkout'
 
 if [ "$TERM" != "linux" ]; then
     install_powerline_precmd
