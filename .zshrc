@@ -1,9 +1,3 @@
-# ls after cd
-function chpwd() {
-    emulate -L zsh
-    ls -a
-}
-
 GOPATH=$HOME/go
 # powerline for cmd prompt
 function powerline_precmd() {
@@ -20,8 +14,6 @@ function install_powerline_precmd() {
 }
 
 export ZSH="/home/kooxx078/.oh-my-zsh"
-# export VISUAL=nvim
-# export EDITOR="$VISUAL"
 
 ZSH_THEME="agnoster"
 
@@ -41,7 +33,6 @@ alias vi='nvim'
 alias vim='nvim'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias gs='git status'
-alias gco='git checkout'
 
 if [ "$TERM" != "linux" ]; then
     install_powerline_precmd
@@ -62,3 +53,5 @@ function zle-line-init zle-keymap-select {
 
 zle -N zle-line-init
 zle -N zle-keymap-select
+
+cd $HOME
